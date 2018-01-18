@@ -18,7 +18,7 @@ Construct your own image to your database container.
 
 Follow these steps:
 
-* Search inside of the [settings.py](https://github.com/unicefindia/demo/blob/master/demo/settings.py) of this project for the database configurations and take a note about:
+* Search inside of the [demo/settings.py](https://github.com/unicefindia/demo/blob/master/demo/settings.py) of this project for the database configurations and take a note about:
 
   * the database name;
 
