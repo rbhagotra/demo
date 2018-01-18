@@ -43,3 +43,9 @@ Follow these steps:
 After construct your custom image, it's time to use it.
 
 You can use the commands **docker create** followed by **docker start** to create and start your container, respectively.
+
+## 3 - Run the migrations
+
+The migrations are responsible by translate your models code, into another type of special code, that will be interpreted and translated to the database language(SQL).
+
+If you will not maintain your code sincronized with your database, you will get some errors in your application.
