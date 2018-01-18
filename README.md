@@ -1,8 +1,10 @@
 # Instructions
 
-Construct your own image to your database container. Follow these steps:
+Construct your own image to your database container. 
 
-* Search inside of the settings.py of this project for the database configurations and take a note about:
+Follow these steps:
+
+* Search inside of the [settings.py]() of this project for the database configurations and take a note about:
 
   * the database name;
 
