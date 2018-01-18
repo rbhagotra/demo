@@ -1,10 +1,12 @@
 # Instructions
 
-Construct your own image to your database container. 
+## 1 - Construct your custom image
+
+Construct your own image to your database container.
 
 Follow these steps:
 
-* Search inside of the [settings.py]() of this project for the database configurations and take a note about:
+* Search inside of the [settings.py](https://github.com/unicefindia/demo/blob/master/demo/settings.py) of this project for the database configurations and take a note about:
 
   * the database name;
 
@@ -22,8 +24,22 @@ Follow these steps:
 
 * Create your Dockerfile:
 
-  * Uses the image: **mdillon/postgis:9.3-alpine**;
+  Your Dockerfile is very simple, we only need of two instruction, one to set the base image and another to copy a file to your image.
 
-  * Copy the file **database.sh** to directory: **/docker-entrypoint-initdb.d**.
+  In case of doubt use the [official documentation](https://docs.docker.com/engine/reference/builder/) of Dockerfile.
 
-  * build your own image using only docker command and set the tag to unicef/india:YOUR_NAME.
+  Here the steps needed to put inside your Dockerfile:
+
+  * Uses the image **mdillon/postgis:9.3-alpine** as base image;
+
+  * Copy your local file **database.sh** to directory: **/docker-entrypoint-initdb.d**.
+
+  After create your Dockerfile, the next step is to build your image.
+
+  * Build your custom image using only **docker** command and set the tag to **unicef/india:YOUR_NAME**.
+
+## 2 - Using your custom image
+
+After construct your custom image, it's time to use it.
+
+You can use the commands **docker create** followed by **docker start** to create and start your container, respectively.
