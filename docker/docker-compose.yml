@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  application:
+    image: unicef/app:rashim
+    ports:
+      - "8080:8000"
+    depends_on:
+      - database
+
+  database:
+    image: unicef/india:rashim
